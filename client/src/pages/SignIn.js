@@ -50,8 +50,8 @@ const SignIn = () => {
     },
     
     input: {
-      width: "55%",
-      padding: "10px",
+      width: "20%",
+      padding: "05px",
       textAlign: "center"
     
     },
