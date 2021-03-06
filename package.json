@@ -29,7 +29,8 @@
     "express": "^4.17.1",
     "firebase": "^8.2.7",
     "if-env": "^1.0.4",
-    "mongoose": "^5.11.19"
+    "mongoose": "^5.11.19",
+    "reactdom": "^2.0.0"
   },
   "repository": {
     "type": "git",
