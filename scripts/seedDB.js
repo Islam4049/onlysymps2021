@@ -1,12 +1,14 @@
 const mongoose = require("mongoose");
 const db = require("../models");
+require("dotenv").config()
 
-// This file empties the Books collection and inserts the books below
+// console.log("Process ENV: ", process.env.MONGODB_URI)
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/onlysymps"
+  "mongodb://localhost/onlysymps",  { useFindAndModify: false, useNewUrlParser: true, useUnifiedTopology: true }
 );
+
 
 const diagnosisSeed = [
   {
@@ -299,7 +301,7 @@ const diagnosisSeed = [
 ];
 
 db.Diagnosis
-  .remove({})
+  .deleteMany({})
   .then(() => db.Diagnosis.collection.insertMany(diagnosisSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");

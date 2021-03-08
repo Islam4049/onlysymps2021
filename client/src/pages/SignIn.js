@@ -16,7 +16,7 @@ const SignIn = () => {
     event.preventDefault();
     auth.signInWithEmailAndPassword(email, password).catch(error => {
       setError("Error signing in with password and email!");
-      
+      console.error("Error signing in with password and email", error);
     });
   };
 
@@ -50,8 +50,8 @@ const SignIn = () => {
     },
     
     input: {
-      width: "20%",
-      padding: "05px",
+      width: "55%",
+      padding: "10px",
       textAlign: "center"
     
     },
@@ -75,13 +75,9 @@ const SignIn = () => {
         <Header Logo={"/logo/steth.png"} />
       </div>
 
-
-
-    
-
         <h1 className="formtitle">Sign In:</h1>
           {error !== null && <div className="py-4 bg-red-600 w-full text-white text-center mb-3">{error}</div>}
-         <div> 
+           <div>
            <label htmlFor="userEmail" className="block" style={styles.label}>
             
             Email:

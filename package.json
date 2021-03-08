@@ -9,12 +9,12 @@
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
+    "seed": "node scripts/seedDB.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build",
-    "seed": "node scripts/seedDB.js"
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -26,18 +26,18 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "bulma": "^0.9.2",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "firebase": "^8.2.7",
     "if-env": "^1.0.4",
-    "mongoose": "^5.11.19",
-    "reactdom": "^2.0.0"
+    "mongoose": "^5.11.19"
   },
   "repository": {
     "type": "git",
-    "url": "git+  https://islam4049.github.io/onlysymps2021/"
+    "url": "git+ https://islam4049.github.io/onlysymps2021"
   },
   "bugs": {
-    "url": "  https://islam4049.github.io/onlysymps2021/issues"
+    "url": "https://islam4049.github.io/onlysymps2021/issues"
   },
-  "homepage": " https://islam4049.github.io/onlysymps2021/#readme"
+  "homepage": "https://islam4049.github.io/onlysymps2021/#readme"
 }
