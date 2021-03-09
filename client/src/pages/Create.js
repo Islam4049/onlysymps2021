@@ -9,7 +9,7 @@ import DeleteBtn from "../components/DeleteBtn";
 
 const styles = {
     div: {
-        backgroundColor: "#038989"
+        backgroundColor: ""
     }
 }
 

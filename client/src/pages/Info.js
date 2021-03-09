@@ -37,7 +37,7 @@ const styles = {
 
     body: {
         postion: "fixed",
-        backgroundImage: `url(${"https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=900"})`,
+        backgroundImage: `url(${"https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1200"})`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
@@ -161,10 +161,16 @@ function Info() {
                             <small>* Please Subscribe our weekly/monthly Newsletters from the medical Professionals.[click here]</small>
                         </div>
 
-                </div>
+               
             </div>
+            </div>
+
         </>
     )
 };
 
+
+
 export default Info;
+
+
