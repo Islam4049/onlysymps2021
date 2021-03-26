@@ -10,6 +10,7 @@ mongoose.connect(
 );
 
 
+
 const diagnosisSeed = [
   {
     category: "head",
